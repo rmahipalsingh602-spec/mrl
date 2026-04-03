@@ -1,0 +1,94 @@
+{
+  "Print": {
+    "prefix": "print",
+    "body": [
+      "mrl bolo \"${1:Hello}\""
+    ],
+    "description": "Print a string or expression"
+  },
+  "Variable": {
+    "prefix": "var",
+    "body": [
+      "mrl rakho ${1:name} = ${2:0}"
+    ],
+    "description": "Create a variable"
+  },
+  "If": {
+    "prefix": "if",
+    "body": [
+      "mrl agar ${1:x} > ${2:0}",
+      "    mrl bolo \"${3:Condition met}\"",
+      "khatam"
+    ],
+    "description": "Create an if block"
+  },
+  "If Else": {
+    "prefix": "ifelse",
+    "body": [
+      "mrl agar ${1:score} >= ${2:50}",
+      "    mrl bolo \"${3:Pass}\"",
+      "warna",
+      "    mrl bolo \"${4:Retry}\"",
+      "khatam"
+    ],
+    "description": "Create an if / else block"
+  },
+  "Loop": {
+    "prefix": "loop",
+    "body": [
+      "mrl jab tak ${1:x} < ${2:5}",
+      "    mrl bolo ${1:x}",
+      "khatam"
+    ],
+    "description": "Create a loop block"
+  },
+  "Counted Loop": {
+    "prefix": "countloop",
+    "body": [
+      "mrl gino ${1:i} = ${2:1} se ${3:5} kadam ${4:1}",
+      "    mrl bolo ${1:i}",
+      "khatam"
+    ],
+    "description": "Create a counted loop with a loop variable"
+  },
+  "Function": {
+    "prefix": "func",
+    "body": [
+      "mrl function ${1:name}(${2:})",
+      "    mrl bolo \"${3:Hello}\"",
+      "khatam"
+    ],
+    "description": "Create a function definition"
+  },
+  "Function Call": {
+    "prefix": "call",
+    "body": [
+      "mrl call ${1:name}(${2:})"
+    ],
+    "description": "Call an MRL function"
+  },
+  "Import": {
+    "prefix": "import",
+    "body": [
+      "mrl import ${1:module_name}"
+    ],
+    "description": "Import another MRL module"
+  },
+  "AI Prompt": {
+    "prefix": "ai",
+    "body": [
+      "mrl ai \"${1:Generate something useful}\""
+    ],
+    "description": "Run an AI command through the MRL runtime"
+  },
+  "Boolean Check": {
+    "prefix": "bool",
+    "body": [
+      "mrl rakho ${1:is_ready} = sach",
+      "mrl agar ${1:is_ready} aur nahi jhooth",
+      "    mrl bolo \"${2:System ready}\"",
+      "khatam"
+    ],
+    "description": "Create a boolean and logical expression example"
+  }
+}

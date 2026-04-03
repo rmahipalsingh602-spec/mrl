@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1080" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0A1830"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="180" y1="120" x2="760" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D7FF"/>
+      <stop offset="1" stop-color="#8CFFC4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="40" fill="url(#bg)"/>
+  <circle cx="970" cy="134" r="26" fill="#34D7FF" fill-opacity="0.85"/>
+  <path d="M190 468V164H286L448 367L610 164H706V468H605V287L490 421H406L291 287V468H190Z" fill="url(#stroke)"/>
+  <path d="M192 520H860" stroke="#8CFFC4" stroke-width="12" stroke-linecap="round"/>
+  <text x="760" y="248" fill="#F5FBFF" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="74" font-weight="700">MRL</text>
+  <text x="760" y="320" fill="#D6E8FF" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="34" font-weight="500">Build the Future with MRL</text>
+  <text x="760" y="370" fill="#9AB0CE" font-family="IBM Plex Mono, monospace" font-size="24">Multi Runtime Language | Mr. Rathore Company</text>
+</svg>

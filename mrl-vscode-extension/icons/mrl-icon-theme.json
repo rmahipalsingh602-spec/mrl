@@ -1,0 +1,21 @@
+{
+  "iconDefinitions": {
+    "_mrl_file": {
+      "iconPath": "../media/mrl-logo.svg"
+    }
+  },
+  "fileExtensions": {
+    "mrl": "_mrl_file",
+    "hi": "_mrl_file"
+  },
+  "fileNames": {
+    "main.mrl": "_mrl_file",
+    "index.mrl": "_mrl_file",
+    "app.mrl": "_mrl_file",
+    "home.hi": "_mrl_file",
+    "index.hi": "_mrl_file"
+  },
+  "languageIds": {
+    "mrl": "_mrl_file"
+  }
+}

@@ -1,0 +1,4 @@
+﻿mrl ui window "My App"
+    button "Click Me"
+    text "Hello from UI"
+end

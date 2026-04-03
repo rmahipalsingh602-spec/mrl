@@ -1,0 +1,16 @@
+﻿[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mrl-lang"
+version = "3.1.0"
+description = "MRL (Multi Runtime Language) CLI and runtime."
+requires-python = ">=3.10"
+
+[project.scripts]
+mrl = "mrl_lang.__main__:main"
+
+[tool.setuptools]
+packages = ["mrl", "mrl_lang"]
+

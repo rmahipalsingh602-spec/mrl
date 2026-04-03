@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MRL | Features</title>
+  <meta name="description" content="Explore MRL 3.1: counted loops, booleans, else branching, multi-runtime execution, GUI and web runtimes, tooling polish, and the compiler roadmap.">
+  <meta name="author" content="Mr. Rathore Company">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#050816">
+  <link rel="canonical" href="/features">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MRL">
+  <meta property="og:title" content="MRL | Features">
+  <meta property="og:description" content="Explore MRL 3.1 features: counted loops, booleans, else branching, GUI, web runtime, VM path, and JIT roadmap.">
+  <meta property="og:image" content="/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MRL | Features">
+  <meta name="twitter:description" content="See what makes MRL 3.1 feel like a real language platform, not just a runtime.">
+  <meta name="twitter:image" content="/assets/og-cover.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" alt="MRL logo">
+        <span class="brand-lockup">
+          <span class="brand-title">MRL</span>
+          <span class="brand-subtitle">Multi Runtime Language | Mr. Rathore Company</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="docs.html">Docs</a>
+        <a href="features.html" class="is-active" aria-current="page">Features</a>
+        <a href="about.html">About</a>
+        <a href="download.html" class="button button--ghost button--small">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-hero-glow>
+      <div class="page-frame hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Platform Features</span>
+          <h1>One language surface. <span class="gradient-word">A much stronger release.</span></h1>
+          <p class="lede">MRL 3.1 is built as an ecosystem: readable syntax in front, smarter control flow in the middle, specialized runtimes underneath, and a clear runway toward compiler-driven performance work.</p>
+          <div class="hero-actions">
+            <a class="button" href="download.html">Download MRL</a>
+            <a class="button button--ghost" href="docs.html">Read Docs</a>
+          </div>
+        </div>
+        <div class="feature-orbit" data-reveal>
+          <div class="feature-chip feature-chip--a">Counted Loops</div>
+          <div class="feature-chip feature-chip--b">Booleans</div>
+          <div class="feature-chip feature-chip--c">Else Blocks</div>
+          <div class="feature-chip feature-chip--d">AI</div>
+          <div class="feature-chip feature-chip--e">MRL 3.1</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-frame section-split">
+        <div class="band-surface" data-reveal>
+          <span class="eyebrow">Flow control</span>
+          <h2>Programs can say more with less ceremony.</h2>
+          <p>MRL 3.1 upgrades the everyday language surface so scripts, tools, and launch demos read more like intent and less like workarounds.</p>
+          <ul class="clean-list" style="margin-top: 20px;">
+            <li><strong><code>mrl gino</code> counted loops</strong> for variable-driven iteration</li>
+            <li><strong><code>warna</code> else blocks</strong> for cleaner branching</li>
+            <li><strong><code>sach</code>, <code>jhooth</code>, <code>aur</code>, <code>ya</code>, <code>nahi</code></strong> for boolean logic that feels native to MRL</li>
+          </ul>
+        </div>
+        <div class="band-surface" data-reveal>
+          <span class="eyebrow">Runtime system</span>
+          <h2>Multi-runtime from the start.</h2>
+          <p>MRL still targets different execution modes without forcing users to learn different language surfaces for each one.</p>
+          <ul class="clean-list" style="margin-top: 20px;">
+            <li>Native CLI workflows for scripts and automation</li>
+            <li>App runtime for interface-led experiences</li>
+            <li>Web runtime for MRL-powered pages and previews</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-frame section-split">
+        <div class="band-surface" data-reveal>
+          <span class="eyebrow">Tooling polish</span>
+          <h2>The language now feels better in the editor too.</h2>
+          <p>Launch quality depends on more than syntax. MRL now carries a sharper workflow with stronger VS Code support and file identity.</p>
+          <ul class="clean-list" style="margin-top: 20px;">
+            <li>Dedicated file icons for <code>.mrl</code> and <code>.hi</code> files</li>
+            <li>Updated snippets and keyword completion for the new syntax</li>
+            <li>Improved file association story for a more native Windows feel</li>
+          </ul>
+        </div>
+        <div class="band-surface" data-reveal>
+          <span class="eyebrow">AI and packages</span>
+          <h2>Still ready for ecosystem growth.</h2>
+          <p>The platform story remains bigger than syntax. Packages, prompts, GUI, and web output keep MRL moving toward a wider ecosystem.</p>
+          <ul class="clean-list" style="margin-top: 20px;">
+            <li>Package install flow through official commands</li>
+            <li><code>mrl ai</code> for generated helpers and assisted workflows</li>
+            <li>Consistent command story across native, app, and web targets</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-frame split-band">
+        <div class="band-surface" data-reveal>
+          <span class="eyebrow">Release impact</span>
+          <h2>This is the kind of update people notice.</h2>
+          <p>MRL 3.1 does not just add keywords. It makes the language feel more complete in demos, tutorials, launch videos, and first-time developer onboarding.</p>
+        </div>
+        <div class="roadmap-track" data-reveal>
+          <div class="roadmap-phase">
+            <em>Now</em>
+            <strong>Launch-ready control flow</strong>
+            <p>Readable syntax, counted loops, boolean logic, better branching, and public onboarding that feels stronger.</p>
+          </div>
+          <div class="roadmap-phase">
+            <em class="is-muted">Next</em>
+            <strong>Bytecode and VM depth</strong>
+            <p>A stronger compilation path for performance, portability, and language-level evolution.</p>
+          </div>
+          <div class="roadmap-phase">
+            <em class="is-muted">Later</em>
+            <strong>JIT optimization</strong>
+            <p>Hot-path execution improvements and a more advanced runtime story for serious workloads.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-frame">
+        <div class="cta-band" data-reveal>
+          <span class="eyebrow">Next step</span>
+          <h2>See the syntax, install the binary, and explore the platform from the front door.</h2>
+          <div class="cta-row">
+            <a class="button" href="docs.html">Go to Docs</a>
+            <a class="button button--ghost" href="download.html">Get the Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-frame footer-panel">
+    <div class="page-frame footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img class="brand-mark" src="assets/logo.svg" alt="MRL logo">
+          <span class="brand-lockup">
+            <span class="brand-title">MRL</span>
+            <span class="brand-subtitle">Feature Overview</span>
+          </span>
+        </div>
+        <p>MRL is not one runtime mode with a logo. It is an expanding Mr. Rathore Company language platform with room to grow in both product and architecture.</p>
+        <div class="footer-meta">&copy; <span data-year></span> Mr. Rathore Company. All rights reserved.</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="docs.html">Documentation</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

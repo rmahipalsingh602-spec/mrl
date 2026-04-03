@@ -1,0 +1,118 @@
+{
+  "name": "mrl-vscode-extension",
+  "displayName": "MRL Language Tools",
+  "description": "Production-ready Visual Studio Code tooling for MRL (Multi Runtime Language).",
+  "version": "1.0.0",
+  "publisher": "mrl-labs",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Themes"
+  ],
+  "keywords": [
+    "mrl",
+    "mrl_hi",
+    "hi",
+    "multi runtime language",
+    "dsl",
+    "language tooling"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "mrl",
+        "aliases": [
+          "MRL",
+          "mrl"
+        ],
+        "extensions": [
+          ".mrl",
+          ".hi"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mrl",
+        "scopeName": "source.mrl",
+        "path": "./syntaxes/mrl.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "mrl-file-icons",
+        "label": "MRL File Icons",
+        "path": "./icons/mrl-icon-theme.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "mrl",
+        "path": "./snippets/mrl.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "mrl.runFile",
+        "title": "Run MRL File",
+        "category": "MRL"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "mrl.runFile",
+          "when": "editorLangId == mrl"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "mrl.runFile",
+          "when": "resourceLangId == mrl",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "mrl.runFile",
+          "when": "resourceExtname == .mrl",
+          "group": "navigation"
+        },
+        {
+          "command": "mrl.runFile",
+          "when": "resourceExtname == .hi",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "MRL",
+      "properties": {
+        "mrl.commandPath": {
+          "type": "string",
+          "default": "mrl",
+          "markdownDescription": "Installed MRL CLI used to run `.mrl` or `.hi` files. Set an absolute path to `mrl.exe` if needed."
+        },
+        "mrl.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "markdownDescription": "Python executable used when the MRL CLI is unavailable."
+        },
+        "mrl.runtimeScript": {
+          "type": "string",
+          "default": "main.py",
+          "markdownDescription": "Fallback path to the MRL runtime entry script. Relative paths are resolved from the workspace folder."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "check": "node --check extension.js"
+  }
+}

@@ -1,0 +1,68 @@
+﻿[build]
+  publish = "website"
+
+[build.processing]
+  skip_processing = false
+
+[[redirects]]
+  from = "/download"
+  to = "/download.html"
+  status = 200
+
+[[redirects]]
+  from = "/docs"
+  to = "/docs.html"
+  status = 200
+
+[[redirects]]
+  from = "/features"
+  to = "/features.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+
+[[headers]]
+  for = "/downloads/release-manifest.json"
+  [headers.values]
+    Content-Type = "application/json; charset=utf-8"
+    Cache-Control = "no-cache"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/downloads/SHA256SUMS.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "no-cache"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    Content-Type = "application/octet-stream"
+    Content-Disposition = "attachment"
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    X-Robots-Tag = "noindex, noarchive"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

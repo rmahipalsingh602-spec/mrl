@@ -1,0 +1,4 @@
+﻿mrl install utils
+mrl import utils
+mrl call utils_info()
+mrl ai "generate navbar"

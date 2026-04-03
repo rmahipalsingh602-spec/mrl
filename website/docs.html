@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MRL | Documentation</title>
+  <meta name="description" content="Learn the core MRL syntax, install the official runtime, and explore counted loops, booleans, branching, imports, and AI workflows.">
+  <meta name="author" content="Mr. Rathore Company">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#050816">
+  <link rel="canonical" href="/docs">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MRL">
+  <meta property="og:title" content="MRL | Documentation">
+  <meta property="og:description" content="Learn MRL syntax, installation, counted loops, booleans, imports, functions, and AI-ready commands.">
+  <meta property="og:image" content="/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MRL | Documentation">
+  <meta name="twitter:description" content="Official MRL documentation from first file to advanced runtime usage, now with counted loops and boolean logic.">
+  <meta name="twitter:image" content="/assets/og-cover.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" alt="MRL logo">
+        <span class="brand-lockup">
+          <span class="brand-title">MRL</span>
+          <span class="brand-subtitle">Multi Runtime Language | Mr. Rathore Company</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="docs.html" class="is-active" aria-current="page">Docs</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About</a>
+        <a href="download.html" class="button button--ghost button--small">Install MRL</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="page-frame">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Documentation</span>
+          <h2>Learn MRL from first file to advanced runtime usage.</h2>
+          <p>The official docs focus on the public language experience: install the runtime, write readable syntax, and ship with the MRL 3.1 feature wave including counted loops, boolean logic, and cleaner branching.</p>
+        </div>
+        <div class="docs-layout">
+          <aside class="docs-shell" data-reveal>
+            <nav class="docs-nav">
+              <a href="#installation">Installation</a>
+              <a href="#editor-setup">Editor Setup</a>
+              <a href="#whats-new">What's New</a>
+              <a href="#hello-world">Hello World</a>
+              <a href="#basic-syntax">Basic Syntax</a>
+              <a href="#examples">Examples</a>
+              <a href="#advanced-usage">Advanced Usage</a>
+            </nav>
+          </aside>
+          <div class="docs-content">
+            <section class="docs-section" id="installation" data-reveal>
+              <h2>Installation</h2>
+              <p>Download the official Windows build, place <code>mrl.exe</code> in a stable tools directory, add that directory to your PATH, and run MRL from any project folder with the <code>mrl</code> command.</p>
+              <div class="code-frame" style="margin-top: 20px;">
+                <button class="copy-button" type="button" data-copy="#docs-install-command">Copy</button>
+                <pre id="docs-install-command">mrl --version
+mrl test.mrl</pre>
+              </div>
+              <p class="inline-note">In PowerShell or CMD, use <code>mrl your-file.mrl</code>. Typing only <code>.mrl</code> will not work because that is just the file extension.</p>
+            </section>
+
+            <section class="docs-section" id="editor-setup" data-reveal>
+              <h2>Editor Setup</h2>
+              <p>If the VS Code marketplace does not show MRL yet, use the local extension that already ships in this repository.</p>
+              <ol class="install-list" style="margin-top: 20px;">
+                <li>Open <code>mrl-vscode-extension/</code> in Visual Studio Code.</li>
+                <li>Run <code>npm install</code>.</li>
+                <li>Press <code>F5</code> to launch the Extension Development Host.</li>
+                <li>Open an <code>.mrl</code> or <code>.hi</code> file and use <code>MRL: Run MRL File</code>.</li>
+                <li>For the full MRL logo on files, choose <code>Preferences: File Icon Theme</code> and select <code>MRL File Icons</code>.</li>
+              </ol>
+            </section>
+
+            <section class="docs-section" id="whats-new" data-reveal>
+              <h2>What's New in MRL 3.1</h2>
+              <ul class="docs-list">
+                <li><strong>Counted loop variables:</strong> use <code>mrl gino i = 1 se 5</code> for clean range-style iteration.</li>
+                <li><strong>Boolean logic:</strong> use <code>sach</code>, <code>jhooth</code>, <code>aur</code>, <code>ya</code>, and <code>nahi</code>.</li>
+                <li><strong>Cleaner branching:</strong> add <code>warna</code> for a natural else block.</li>
+                <li><strong>Tooling polish:</strong> updated VS Code snippets, syntax highlighting, and file icons for a more premium workflow.</li>
+              </ul>
+            </section>
+
+            <section class="docs-section" id="hello-world" data-reveal>
+              <h2>Hello World</h2>
+              <p>MRL programs are readable from the first line. The language prefix makes intent explicit and keeps the surface easy to scan.</p>
+              <div class="code-frame" style="margin-top: 20px;">
+                <button class="copy-button" type="button" data-copy="#docs-hello">Copy</button>
+                <pre id="docs-hello">mrl bolo "Hello World"</pre>
+              </div>
+            </section>
+
+            <section class="docs-section" id="basic-syntax" data-reveal>
+              <h2>Basic Syntax</h2>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl bolo</code><em>Output</em></div>
+                <p>Print text or expression results.</p>
+                <pre class="command-line">mrl bolo "Hello World"</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl rakho</code><em>State</em></div>
+                <p>Create or update a variable.</p>
+                <pre class="command-line">mrl rakho score = 10</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl agar</code><em>Control</em></div>
+                <p>Start a conditional block and close it with <code>khatam</code>.</p>
+                <pre class="command-line">mrl agar score &gt; 5
+    mrl bolo "Ready"
+khatam</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>warna</code><em>Fallback</em></div>
+                <p>Add a fallback branch to an <code>agar</code> block.</p>
+                <pre class="command-line">mrl agar score &gt;= 50
+    mrl bolo "Pass"
+warna
+    mrl bolo "Retry"
+khatam</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl jab tak</code><em>Loop</em></div>
+                <p>Repeat while the condition stays true.</p>
+                <pre class="command-line">mrl jab tak score &lt; 20
+    mrl rakho score = score + 1
+khatam</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl gino</code><em>Counted Loop</em></div>
+                <p>Run a counted loop with an explicit loop variable and optional step.</p>
+                <pre class="command-line">mrl gino i = 1 se 5 kadam 2
+    mrl bolo i
+khatam</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl function</code><em>Reuse</em></div>
+                <p>Define a function with parameters.</p>
+                <pre class="command-line">mrl function greet(name)
+    mrl bolo name
+khatam</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl call</code><em>Invoke</em></div>
+                <p>Call a defined function with arguments.</p>
+                <pre class="command-line">mrl call greet("MRL")</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl import</code><em>Modules</em></div>
+                <p>Load another module by name.</p>
+                <pre class="command-line">mrl import utils</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>mrl ai</code><em>AI</em></div>
+                <p>Send a prompt into an AI-backed workflow.</p>
+                <pre class="command-line">mrl ai "Generate landing page copy"</pre>
+              </div>
+              <div class="syntax-entry">
+                <div class="syntax-label"><code>sach / jhooth</code><em>Boolean</em></div>
+                <p>Work with readable boolean values and logical operators.</p>
+                <pre class="command-line">mrl rakho ready = sach
+mrl agar ready aur nahi jhooth
+    mrl bolo "System ready"
+khatam</pre>
+              </div>
+            </section>
+
+            <section class="docs-section" id="examples" data-reveal>
+              <h2>Examples</h2>
+              <p>The language is compact enough for quick scripts and structured enough for launch-ready runtime targets.</p>
+              <div class="code-frame" style="margin-top: 20px;">
+                <button class="copy-button" type="button" data-copy="#docs-example">Copy</button>
+                <pre id="docs-example">mrl rakho launch_ready = sach
+
+mrl agar launch_ready aur nahi jhooth
+    mrl bolo "MRL launch wave active"
+warna
+    mrl bolo "Launch blocked"
+khatam
+
+mrl gino wave = 1 se 5
+    mrl bolo "Wave " + wave
+khatam</pre>
+              </div>
+            </section>
+
+            <section class="docs-section" id="advanced-usage" data-reveal>
+              <h2>Advanced Usage</h2>
+              <ul class="docs-list">
+                <li><strong>Packages:</strong> install reusable modules and expand your project without leaving the MRL workflow.</li>
+                <li><strong>AI workflows:</strong> combine readable commands with generated ideas, helpers, and content.</li>
+                <li><strong>App runtime:</strong> build interface-driven programs through MRL app targets.</li>
+                <li><strong>Web runtime:</strong> serve MRL-powered pages through the web execution path.</li>
+                <li><strong>Future compiler path:</strong> bytecode, VM, and JIT milestones continue to push performance and runtime sophistication forward.</li>
+              </ul>
+              <div class="code-frame" style="margin-top: 20px;">
+                <button class="copy-button" type="button" data-copy="#docs-advanced">Copy</button>
+                <pre id="docs-advanced">mrl install utils
+mrl import utils
+mrl ai "Draft a launch status update"
+
+mrl gino pulse = 10 se 2 kadam -4
+    mrl bolo "Pulse " + pulse
+khatam</pre>
+              </div>
+              <p class="inline-note">To start the web runtime, run <code>mrl run web</code> in your terminal. That command belongs in the CLI, not inside an <code>.mrl</code> source file.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-frame footer-panel">
+    <div class="page-frame footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img class="brand-mark" src="assets/logo.svg" alt="MRL logo">
+          <span class="brand-lockup">
+            <span class="brand-title">MRL</span>
+            <span class="brand-subtitle">Language Docs</span>
+          </span>
+        </div>
+        <p>Docs for real users: learn the syntax, ship your first file, and explore the wider MRL runtime ecosystem from Mr. Rathore Company.</p>
+        <div class="footer-meta">&copy; <span data-year></span> Mr. Rathore Company. All rights reserved.</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

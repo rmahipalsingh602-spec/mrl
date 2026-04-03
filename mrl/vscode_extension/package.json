@@ -1,0 +1,45 @@
+{
+  "name": "mrl-language-tools",
+  "displayName": "MRL Language Tools",
+  "description": "Syntax highlighting and developer tooling for Multi Runtime Language.",
+  "version": "0.1.0",
+  "publisher": "mrl-labs",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "mrl",
+        "aliases": ["MRL", "mrl"],
+        "extensions": [".mrl", ".hi"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mrl",
+        "scopeName": "source.mrl",
+        "path": "./syntaxes/mrl.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "mrl-file-icons",
+        "label": "MRL File Icons",
+        "path": "./icons/mrl-icon-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "mrl.showLogo",
+        "title": "MRL: Show Neon Logo"
+      }
+    ]
+  }
+}

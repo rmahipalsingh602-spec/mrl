@@ -1,0 +1,3 @@
+mrl bolo '📱 App Launching...'
+mrl rakho battery = 80
+mrl agar battery > 20 bolo 'Battery Sufficient'

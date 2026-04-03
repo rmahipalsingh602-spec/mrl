@@ -1,0 +1,5 @@
+mrl rakho x = 1
+mrl jab tak x < 5
+    mrl bolo x
+    mrl rakho x = x + 1
+khatam

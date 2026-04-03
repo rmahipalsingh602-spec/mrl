@@ -1,0 +1,23 @@
+mrl rakho launch_ready = sach
+mrl rakho total = 0
+
+mrl agar launch_ready aur nahi jhooth
+    mrl bolo "MRL 3.1 launch sequence active"
+warna
+    mrl bolo "Launch blocked"
+khatam
+
+mrl gino wave = 1 se 5
+    mrl bolo "Wave " + wave
+    mrl rakho total = total + wave
+khatam
+
+mrl gino reverse = 10 se 2 kadam -4
+    mrl bolo "Reverse pulse " + reverse
+khatam
+
+mrl agar total >= 15 ya launch_ready == jhooth
+    mrl bolo "Wow update complete"
+warna
+    mrl bolo "Needs more work"
+khatam

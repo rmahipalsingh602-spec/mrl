@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.mrl]
+@="MRLFile"
+
+[HKEY_CLASSES_ROOT\.hi]
+@="MRLFile"
+
+[HKEY_CLASSES_ROOT\MRLFile]
+@="MRL Script"
+
+[HKEY_CLASSES_ROOT\MRLFile\DefaultIcon]
+@="\"C:\\Path\\To\\mrl.exe\",0"
+
+[HKEY_CLASSES_ROOT\MRLFile\shell\open\command]
+@="\"C:\\Path\\To\\mrl.exe\" \"%1\" %*"
+
+[HKEY_CLASSES_ROOT\MRLFile\shell\edit]
+@="Open in VS Code"
+
+[HKEY_CLASSES_ROOT\MRLFile\shell\edit\command]
+@="\"C:\\Windows\\System32\\cmd.exe\" /c code \"%1\""

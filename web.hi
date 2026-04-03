@@ -1,0 +1,4 @@
+mrl route /
+mrl title 'MRL Home Page'
+mrl bolo 'Welcome to MRL Modern Web Engine'
+mrl bolo 'Powered by Flask + JS + SPA'

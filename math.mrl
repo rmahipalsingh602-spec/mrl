@@ -1,0 +1,3 @@
+mrl function square(x)
+    mrl bolo x * x
+khatam

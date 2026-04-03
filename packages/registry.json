@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "utils": {
+      "entry": "packages/utils/main.mrl",
+      "path": "packages/utils"
+    }
+  },
+  "version": 1
+}
